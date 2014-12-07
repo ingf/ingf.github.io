@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 一切随风
+title: Keep It Simple & Stupid
 ---
 {% include JB/setup %}
     
