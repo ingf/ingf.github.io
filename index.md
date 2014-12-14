@@ -14,6 +14,6 @@ title: Keep It Simple & Stupid
 
 ---
 
-<a href= "mailto:ingf.ivan@gmail.com"> 
+Email：<a href= "mailto:ingf.ivan@gmail.com"> 
    ingf.ivan@gmail.com
 </a>
