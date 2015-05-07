@@ -14,7 +14,10 @@ tags: [ VPN]
 
 首先需要一个云主机，其实[青云](https://www.qingcloud.com/)的很好嘛，但是还有更好的，[http://aws.amazon.com/cn/free/](http://aws.amazon.com/cn/free/) AWS 有一年的免费使用期限，对于翻墙和自己搞点啥东西还是很方便的，强烈推荐，这中间需要绑定信用卡号，会扣掉一美元，注意不要超过期限了哦，超过了可能会要扣钱的。
 
-申请下来了以后，创建一个Amazon EC2实例，然后就可以在上面倒腾各种服务了。我们还是先来安装 Shadowsocks 吧，[http://shadowsocks.org/en/download/servers.html](http://shadowsocks.org/en/download/servers.html)，这里列出了所有的服务器版本，各种支持啊，我很高兴的选择了 Node.js 版，先安装 Node.js，可以点[这里下载](https://nodejs.org/download/)，然后 `npm install -g shadowsocks` 
+申请下来了以后，创建一个Amazon EC2实例(edhat 默认用户名为ec2-user ubuntu默认用户名为ubuntu)，然后就可以在上面倒腾各种服务了。先开启防火墙吧，在网络与安全里面进行设置，如下图所示，在操作那里点开，编辑入站规则
+![shadowsocks-safe](/img/shadowsocks-safe.png)
+
+然后我们来安装 Shadowsocks 吧，[http://shadowsocks.org/en/download/servers.html](http://shadowsocks.org/en/download/servers.html)，这里列出了所有的服务器版本，各种支持啊，我很高兴的选择了 Node.js 版，先安装 Node.js，可以点[这里下载](https://nodejs.org/download/)，然后 `npm install -g shadowsocks` 
 
 搞定！接下来进行配置，我的配置文件在这里`/usr/local/lib/node_modules/shadowsocks/config.json`
 
@@ -27,6 +30,8 @@ tags: [ VPN]
         "timeout":600,
         "method":"aes-256-cfb"
     }
+
+启动服务，因为平常都用 pm2管理，所以用 pm2启动服务 `pm2 start /usr/bin/ssserver`
 
 ## 客户端
 
