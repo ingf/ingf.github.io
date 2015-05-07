@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "利用Shadowsocks和 AWS 免费翻墙"
-description: "VPN Shadowsocks  greenVPN 免费 翻墙 AWS 云主机"
+description: "VPN Shadowsocks  greenVPN 免费 账号 翻墙 AWS 云主机"
 category: 
 tags: [ VPN]
 ---
