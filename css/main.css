@@ -1434,7 +1434,7 @@
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 12px;
+				font-size: 12pt;
 			}
 
 		}
@@ -1442,7 +1442,7 @@
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12px;
+				font-size: 12pt;
 			}
 
 		}
@@ -1450,7 +1450,7 @@
 		@media screen and (max-width: 980px) {
 
 			body, input, select, textarea {
-				font-size: 12px;
+				font-size: 12pt;
 			}
 
 		}
@@ -1458,7 +1458,7 @@
 		@media screen and (max-width: 736px) {
 
 			body, input, select, textarea {
-				font-size: 12px;
+				font-size: 14px;
 			}
 
 		}
@@ -1466,7 +1466,7 @@
 		@media screen and (max-width: 480px) {
 
 			body, input, select, textarea {
-				font-size: 12px;
+				font-size: 14px;
 			}
 
 		}
