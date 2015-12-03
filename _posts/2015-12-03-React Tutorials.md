@@ -43,6 +43,7 @@ ReactDOM.render 是 React 的最基本方法，用于将模板转换成 HTML 语
         </div>,
         document.getElementById('app')
     );
+
 上面代码体现了 JSX 的基本语法规则：遇到 HTML 标签（以 &lt; 开头），就用 HTML 规则解析；遇到代码块（以 { 开头），就用 JavaScript 规则解析。上面代码的运行结果如下。
 
     <div id="app">
@@ -78,6 +79,7 @@ React 允许将代码封装成组件（component），然后像插入普通 HTML
             <span data-reactid=".0.1">8888</span>
         </div>
     </div>
+
 添加组件属性，有一个地方需要注意，就是 class 属性需要写成 className ，for 属性需要写成 htmlFor ，这是因为 class 和 for 是 JavaScript 的保留字。
 
 ### 获取真实的DOM节点
@@ -102,6 +104,7 @@ React 允许将代码封装成组件（component），然后像插入普通 HTML
         <Greeting />,
         document.getElementById('app')
     );
+
 上面代码中，组件 Greeting 的子节点有一个文本输入框，用于获取用户的输入。这时就必须获取真实的 DOM 节点，虚拟 DOM 是拿不到用户输入的。为了做到这一点，文本输入框必须有一个 ref 属性，然后 this.refs.[refName] 就会返回这个真实的 DOM 节点。
 需要注意的是，由于 this.refs.[refName] 属性获取的是真实 DOM ，所以必须等到虚拟 DOM 插入文档以后，才能使用这个属性，否则会报错。
 
