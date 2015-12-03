@@ -27,7 +27,6 @@
                   {% for category in page.categories limit:1 %}
                     <a href="#">{{ category }}</a>
                   {% endfor %}
-
         <!--
         <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
         -->
@@ -50,18 +49,6 @@
                 </ul>
               </footer>
            </article>
-  					<ul class="actions pagination">
-  					  {% if page.previous %}
-  	  				  <li><a href="{{ page.previous.url }}" class="button big previous">Previous Post</a></li>
-  						{% else %}
-  						  <li><a href="#" class="disabled button big previous">Previous Post</a></li>
-  						{% endif %}
-							{% if page.next %}
-  						  <li><a href="{{ page.next.url }}" class="button big next">Next Post</a></li>
-  						{% else %}
-  						  <li><a href="#" class="disabled button big next">Next Post</a></li>
-  						{% endif %}
-  					</ul>
 					</div>
 
 				<!-- Sidebar -->
@@ -69,14 +56,6 @@
 
 						<!-- Intro -->
 						{% include intro.html %}
-
-						<!-- Mini Posts -->
-						{% include miniposts.html %}
-
-						<!-- Posts List -->
-
-						<!-- About -->
-					  {% include about.html %}
 
 						<!-- Footer -->
 						{% include footer.html %}

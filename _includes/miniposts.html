@@ -1,0 +1,27 @@
+<section>
+  <div class="mini-posts">
+    {% for post in site.posts limit:4 %}
+      <article class="mini-post">
+  	    <header>
+  		    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		      <time class="published" datetime="{{post.date | date: "%F" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+						<!--<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>-->
+			  </header>
+        {% if post.image %}
+          <a href="{{ post.url }}" class="image"><img src="{{post.image}}" alt="" /></a>
+        {% endif %}
+		  </article>
+									<!-- Mini Post -->
+									  <!--
+										<article class="mini-post">
+											<header>
+												<h3><a href="#">Vitae sed condimentum</a></h3>
+												<time class="published" datetime="2015-10-20">October 20, 2015</time>
+												<a href="#" class="author"><img src="/images/avatar.jpg" alt="" /></a>
+											</header>
+											<a href="#" class="image"><img src="/images/pic04.jpg" alt="" /></a>
+										</article>
+									-->
+    {% endfor %}
+  </div>
+</section>

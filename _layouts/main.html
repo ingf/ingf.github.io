@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  {% include header.html %}
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				{% include head.html %}
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+			      {{ content }}
+  					<ul class="actions pagination">
+  					  {% if paginator.previous_page %}
+  	  				  <li><a href="{{ paginator.previous_page_path }}" class="button big previous">Previous Page</a></li>
+  						{% else %}
+  						  <li><a href="#" class="disabled button big previous">Previous Page</a></li>
+  						{% endif %}
+  							<li>{{ paginator.page }} / {{ paginator.total_pages }}</li>
+							{% if paginator.next_page %}
+  						  <li><a href="{{ paginator.next_page_path }}" class="button big next">Next Page</a></li>
+  						{% else %}
+  						  <li><a href="#" class="disabled button big next">Next Page</a></li>
+  						{% endif %}
+  					</ul>
+					</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+						{% include intro.html %}
+
+						<!-- Mini Posts -->
+						{% include miniposts.html %}
+
+						<!-- Posts List -->
+
+						<!-- About -->
+					  {% include about.html %}
+
+						<!-- Footer -->
+						{% include footer.html %}
+					</section>
+			</div>
+		<!-- Scripts -->
+		{% include scripts.html %}
+	</body>
+</html>

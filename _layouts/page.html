@@ -1,5 +1,70 @@
----
-layout: default
----
-{% include JB/setup %}
-{% include themes/bootstrap-3/page.html %}
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  {% include header.html %}
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				{% include head.html %}
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+            <article class="post">
+              <header>
+                <div class="title">
+                  <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+                <!-- <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> -->
+                </div>
+                <div class="meta">
+                  <time class="published" datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                  {% for category in page.categories limit:1 %}
+                    <a href="#">{{ category }}</a>
+                  {% endfor %}
+        <!--
+        <a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>
+        -->
+                </div>
+              </header>
+              {% if page.image %}
+                <a href="{{ page.url }}" class="image featured"><img src="{{page.image}}" alt="" /></a>
+              {% endif %}
+              {{ content }}
+              <footer>
+                <ul class="stats">
+                {% for tag in page.tags limit:3 %}
+                  <li><a href="#">{{ tag }}</a></li>
+                {% endfor %}
+        <!--
+        <li><a href="#">General</a></li>
+        <li><a href="#" class="icon fa-heart">28</a></li>
+        <li><a href="#" class="icon fa-comment">128</a></li>
+        -->
+                </ul>
+              </footer>
+           </article>
+					</div>
+
+				<!-- Sidebar -->
+					<section id="sidebar">
+
+						<!-- Intro -->
+						{% include intro.html %}
+
+						<!-- About -->
+					  {% include about.html %}
+
+						<!-- Footer -->
+						{% include footer.html %}
+					</section>
+			</div>
+		<!-- Scripts -->
+		{% include scripts.html %}
+	</body>
+</html>
