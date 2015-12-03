@@ -5,6 +5,9 @@ description: "React Tutorials"
 category: doc
 tags: [React]
 ---
+
+这是我在公司内网写的文章，现在也调到博客上面来，有些地址是内网地址，不能访问哦，但是都给提供了可替代的实现。
+
 ### 特性
 - 用 JSX 语法取代 HTML 模板，在 JavaScript 里声明式地描述 UI 
 - 虚拟 DOM 取代物理 DOM 作为操作对象，封装了 DOM 的事件系统
@@ -177,7 +180,7 @@ React 为每个状态都提供了两种处理函数，will 函数在进入状态
 - componentWillReceiveProps(object nextProps)：已加载组件收到新的参数时调用
 - shouldComponentUpdate(object nextProps, object nextState)：组件判断是否重新渲染时调用
 
-![lifecycle](lifecycle.png)
+![lifecycle](/img/lifecycle.png)
 
 图中的方法几乎已经包括了 React 的所有 API，自定义组件时根据需要在组件生命周期的不同阶段实现不同的逻辑。除了必须实现 render 方法之外，其它常用的方法包括：
 
@@ -193,7 +196,7 @@ React 为每个状态都提供了两种处理函数，will 函数在进入状态
 
 对于 MVC 开发模式来说，开发者将三者定义成不同的类，实现了表现，数据，控制的分离，开发者更多的是从技术的角度来对 UI 进行拆分，实现松耦合。对于 React 而言，则完全是一个新的思路，开发者从功能的角度出发，将 UI 分成不同的组件，每个组件都独立封装。组件的封装方式和单向数据流动能够极大地简化前端架构的理解难度。下面我们通过组件化的思路来构建我们的电影详情页（为了 DEMO，请原谅我把产品原型修改的这么丑）。
 
-![detail](detail.png)
+![detail](/img/detail.png)
 
 在 React 中，你按照界面模块自然划分的方式来组织和编写你的代码，对于详情界面而言，整个 UI 是一个通过小组件构成的大组件，每个组件只关心自己部分的逻辑，彼此独立。所以界面组织架构如下：
 
