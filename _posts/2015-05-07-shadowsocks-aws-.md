@@ -43,4 +43,4 @@ tags: [ VPN]
 恩，好，打开[https://www.youtube.com/](https://www.youtube.com/)试试吧！
 其他端，Android 和 iOS 自己弄把，很好弄的。
 
-{% include JB/setup %}
+
