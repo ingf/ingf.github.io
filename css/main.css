@@ -13,7 +13,7 @@
 		margin: 0;
 		padding: 0;
 		border: 0;
-		font-size: 100%;
+		/*font-size: 100%;*/
 		font: inherit;
 		vertical-align: baseline;
 	}
@@ -1509,6 +1509,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+		word-break:break-all;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -3195,7 +3196,7 @@
 		@media screen and (max-width: 736px) {
 
 			#wrapper {
-				padding: 1.5em;
+				padding: 1em;
 			}
 
 		}
