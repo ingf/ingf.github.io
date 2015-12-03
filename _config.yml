@@ -1,7 +1,8 @@
 # Site settings
-title: 
+title: 尹锋以为
 email:  ingf.ivan@gmail.com
-description: > # Keep It Simple & Stupid.
+description: > # 
+  Keep It Simple & Stupid 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ingf.github.io/" # the base hostname & protocol for your site
 twitter_username: jekyllrb
