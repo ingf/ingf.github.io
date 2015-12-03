@@ -528,7 +528,7 @@
 
 	}
 
-	@media screen and (max-width: 959px) {
+	@media screen and (max-width: 1280px) {
 
 		.row > * {
 			padding: 0 0 0 1em;
@@ -1439,7 +1439,7 @@
 
 		}
 
-		@media screen and (max-width: 959px) {
+		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
 				font-size: 12pt;
@@ -2279,7 +2279,7 @@
 					content: '\f053';
 				}
 
-			@media screen and (max-width: 959px) {
+			@media screen and (max-width: 1280px) {
 
 				ul.actions.pagination {
 					text-align: center;
@@ -2536,7 +2536,7 @@
 		margin: 0 0 2em 0;
 	}
 
-		@media screen and (max-width: 959px) {
+		@media screen and (max-width: 1280px) {
 
 			.mini-posts {
 				display: -moz-flex;
@@ -3186,7 +3186,7 @@
 
 		}
 
-		@media screen and (max-width: 959px) {
+		@media screen and (max-width: 1280px) {
 
 			#wrapper {
 				display: block;
@@ -3233,7 +3233,7 @@
 			padding-top: 0;
 		}
 
-		@media screen and (max-width: 959px) {
+		@media screen and (max-width: 1280px) {
 
 			#sidebar {
 				border-top: solid 1px rgba(160, 160, 160, 0.3);
@@ -3285,7 +3285,7 @@
 		font-size: 0.8em;
 	}
 
-	@media screen and (max-width: 959px) {
+	@media screen and (max-width: 1280px) {
 
 		#intro {
 			margin: 0 0 3em 0;
