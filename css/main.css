@@ -1426,7 +1426,7 @@
 
 	body, input, select, textarea {
 		color: #646464;
-		font-family: "Source Sans Pro", Helvetica, 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+		font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 		font-size: 14pt;
 		font-weight: 400;
 		line-height: 1.75;
@@ -2081,6 +2081,11 @@
 		}
 
 /* Image */
+	
+	article img {
+		max-width: 670px;
+		width: 90%;
+	}
 
 	.image {
 		border: 0;
