@@ -1508,7 +1508,7 @@
 
 	p {
 		margin: 0 0 2em 0;
-		word-break:break-all;
+		word-wrap:break-word;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -3197,7 +3197,7 @@
 		@media screen and (max-width: 736px) {
 
 			#wrapper {
-				padding: 1em;
+				padding: 1.2em;
 			}
 
 		}
