@@ -1433,7 +1433,7 @@
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 12px;
 			}
 
 		}
@@ -1441,7 +1441,7 @@
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 12px;
 			}
 
 		}
@@ -1449,7 +1449,7 @@
 		@media screen and (max-width: 980px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 12px;
 			}
 
 		}
@@ -1457,7 +1457,7 @@
 		@media screen and (max-width: 736px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 12px;
 			}
 
 		}
@@ -1465,7 +1465,7 @@
 		@media screen and (max-width: 480px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 12px;
 			}
 
 		}
@@ -2084,6 +2084,8 @@
 	article img {
 		max-width: 780px;
 		width: 90%;
+	    margin: 10px auto;
+	    display: block;
 	}
 
 	.image {
